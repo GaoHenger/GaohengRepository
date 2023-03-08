@@ -4,6 +4,7 @@ class Judge
 {
     public Boolean ifGoal(int[][]arr)
     {
+        //try catch的使用
         if (arr.Length <= 1 || arr[0].Length <= 1)
         {
             Console.WriteLine("true");

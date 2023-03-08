@@ -7,24 +7,15 @@ class PrimeNum
     {
         int lastnum = 0;
         ArrayList al = new ArrayList();
-        if (n % 2 == 0)  //除去2因数，结果为奇数，且因数都为偶数
+       for(int i = 2; i * i <= n; i++)
         {
-            al.Add(2);
-        }
-        while (n % 2 == 0)
-        {
-            n /= 2;
-        }
-        for (int i = 3; i <= System.Math.Sqrt(n); i += 2)//跳过偶数
-        {
-            if (n % i == 0)
+            while (n % i == 0)
             {
                 al.Add(i);
                 n /= i;
             }
-            lastnum = i;
         }
-        if (n > lastnum)
+        if (n != 1)
         {
             al.Add(n);
         }

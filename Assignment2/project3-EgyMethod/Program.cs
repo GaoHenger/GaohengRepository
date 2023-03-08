@@ -8,7 +8,7 @@ class EgMethod
         {
             arr[i] = i + 2;
         }
-        for(int i = 2; i < 50; i++)
+        for(int i = 2; i < 50; i++)//n*n<arr.length
         {
             for(int j=0; j < 99; j++)
             {
